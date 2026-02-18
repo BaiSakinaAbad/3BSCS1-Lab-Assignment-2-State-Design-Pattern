@@ -53,3 +53,4 @@ The `VendingMachineController` class maintains the machine's internal data and d
 * **Any State**  **OutOfOrder**: Triggered if a system failure is detected or inventory hits zero.
 
 ## UML
+![state_uml.png](state_uml.png)
