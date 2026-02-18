@@ -1,7 +1,7 @@
 public class VendingMachine {
     private VendingMachineState currentState;
     private int inventory;
-    private int balance;
+    private double balance;
 
     public VendingMachine(int inventory) {
         this.inventory = inventory;
@@ -19,10 +19,10 @@ public class VendingMachine {
     public void setInventory(int inventory) {
         this.inventory = inventory;
     }
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

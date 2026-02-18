@@ -7,7 +7,7 @@ public class ItemSelectedState implements  VendingMachineState{
     @Override
     public void insertCoin(VendingMachine machine) {
         System.out.println("Coins accepted.");
-        machine.setBalance(machine.getBalance() + 1);
+        machine.setBalance(machine.getBalance() + 1.0);
         machine.setState(new DispensingState());
     }
 
