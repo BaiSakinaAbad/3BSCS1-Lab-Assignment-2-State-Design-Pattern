@@ -1,8 +1,8 @@
 public interface VendingMachineState {
 
-        void selectItem(VendingMachine machine);
-        void insertCoin(VendingMachine machine);
-        void dispense(VendingMachine machine);
-        void setOutOfOrder(VendingMachine machine);
+        void selectItem(VendingMachineController machine);
+        void insertCoin(VendingMachineController machine);
+        void dispense(VendingMachineController machine);
+        void setOutOfOrder(VendingMachineController machine);
 
 }

@@ -1,9 +1,9 @@
-public class VendingMachine {
+public class VendingMachineController {
     private VendingMachineState currentState;
     private int inventory;
     private double balance;
 
-    public VendingMachine(int inventory) {
+    public VendingMachineController(int inventory) {
         this.inventory = inventory;
         this.balance = 0;
         this.currentState = (inventory > 0) ? new IdleState() : new OutOfOrderState();

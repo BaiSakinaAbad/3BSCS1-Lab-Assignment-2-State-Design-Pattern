@@ -33,9 +33,9 @@ Defines a uniform contract for all possible actions within the machine:
 * **DispensingState**: A locked state where no manual operations are allowed. It automatically transitions back to **Idle** once the process is finished.
 * **OutOfOrderState**: A terminal/error state that blocks all interactions until repaired.
 
-### 3. The Context (`VendingMachine`)
+### 3. The Context (`VendingMachineController`)
 
-The `VendingMachine` class maintains the machine's internal data and delegates logic to the current state object.
+The `VendingMachineController` class maintains the machine's internal data and delegates logic to the current state object.
 
 **Core Attributes:**
 
@@ -45,10 +45,11 @@ The `VendingMachine` class maintains the machine's internal data and delegates l
 
 ---
 
-## Logic Transitions
+##  Transitions
 
 * **Idle**  **ItemSelected**: Triggered when a user successfully selects a product.
 * **ItemSelected**  **Dispensing**: Triggered after sufficient payment or selection confirmation.
 * **Dispensing**  **Idle**: Automatic transition once the product is delivered.
 * **Any State**  **OutOfOrder**: Triggered if a system failure is detected or inventory hits zero.
 
+## UML

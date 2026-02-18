@@ -1,16 +1,16 @@
 public class DispensingState implements  VendingMachineState{
     @Override
-    public void selectItem(VendingMachine machine) {
+    public void selectItem(VendingMachineController machine) {
         System.out.println("Currently dispensing.... Cannot select another item.");
     }
 
     @Override
-    public void insertCoin(VendingMachine machine) {
+    public void insertCoin(VendingMachineController machine) {
         System.out.println("Currently dispensing.... Cannot insert another coin.");
     }
 
     @Override
-    public void dispense(VendingMachine machine) {
+    public void dispense(VendingMachineController machine) {
         machine.setInventory(machine.getInventory() - 1);
         machine.setBalance(0);
         System.out.println("Item is dispensing.... Completed!");
@@ -30,7 +30,7 @@ public class DispensingState implements  VendingMachineState{
     }
 
     @Override
-    public void setOutOfOrder(VendingMachine machine) {
+    public void setOutOfOrder(VendingMachineController machine) {
         machine.setState(new OutOfOrderState());
     }
 }

@@ -1,6 +1,6 @@
 public class VendingMachineDemo {
     public static void main(String[] args) {
-        VendingMachine vm = new VendingMachine(1);
+        VendingMachineController vm = new VendingMachineController(1);
 
         //select item - normal flow
         vm.selectItem();
@@ -10,7 +10,7 @@ public class VendingMachineDemo {
 
         // skip select
         System.out.println();
-        VendingMachine vm2 = new VendingMachine(1);
+        VendingMachineController vm2 = new VendingMachineController(1);
         vm2.dispense();
         vm2.insertCoin();
         vm2.dispense();
